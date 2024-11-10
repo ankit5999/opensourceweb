@@ -1,0 +1,45 @@
+/* 
+Site Name : Workforwin 
+Author : Ankit Kumar  
+License: Workforwin License 
+Url : https://workforwin.com/
+Designed By : Ankit Kumar
+Designed In : India  
+Core : Scrollbar Design Configuration
+*/
+
+
+/* ::-webkit-scrollbar {
+    height: 5px;
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color);
+    border-right: 6px solid var(--scrollbar-border-color);
+} */
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color);
+    border-right: 4px solid var(--scrollbar-border-color);
+
+    /* Add gaps at the top and bottom */
+    border-top: 15px solid var(--scrollbar-border-color);
+    /* Adjust thickness for desired gap */
+    border-bottom: 15px solid var(--scrollbar-border-color);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    ::-webkit-scrollbar {
+        display: none;
+        -webkit-appearance: none;
+    }
+
+}

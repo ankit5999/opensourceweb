@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Light Theme */
+:root {
+    --scrollbar-track-color: #F6F9FD; /* Light background color */
+    --scrollbar-thumb-color: #93c5fd;
+    --scrollbar-border-color: #ffffff; /* Light theme thumb border color */
+}
+
+/* Dark Theme */
+[data-theme='dark'] {
+    --scrollbar-track-color: #111827; /* Dark background color */
+    --scrollbar-thumb-color: #1f2937;
+    --scrollbar-border-color: #111827; /* Dark theme thumb border color */
+}
+
