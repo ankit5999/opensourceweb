@@ -9,7 +9,11 @@ export const databases: Database[] = [
         content: [
             { type: 'title', text: 'Installation' },
             { type: 'paragraph', text: 'Install the MongoDB package along with BuildMyMeta to integrate metadata logging with MongoDB.' },
-            { type: 'code', language: 'bash', code: 'npm install build-my-meta mongoose' },
+            {
+                type: 'code',
+                language: 'bash',
+                code: 'npm install build-my-meta mongoose\n# Or, using Yarn\nyarn add build-my-meta mongoose\n# Or, using pnpm\npnpm add build-my-meta mongoose'
+            },
 
             { type: 'title', text: 'Database Structure' },
             { type: 'paragraph', text: 'Metadata entries in MongoDB will have the following structure:' },
@@ -167,7 +171,11 @@ app.post('/login', (req, res, next) => {
         content: [
             { type: 'title', text: 'Installation' },
             { type: 'paragraph', text: 'Install Sequelize along with BuildMyMeta and PostgreSQL packages for integrating metadata logging with PostgreSQL.' },
-            { type: 'code', language: 'bash', code: 'npm install build-my-meta sequelize pg' },
+            {
+                type: 'code',
+                language: 'bash',
+                code: 'npm install build-my-meta sequelize pg\n# Or, using Yarn\nyarn add build-my-meta sequelize pg\n# Or, using pnpm\npnpm add build-my-meta sequelize pg'
+            },
 
             { type: 'title', text: 'Database Structure' },
             { type: 'paragraph', text: 'Metadata entries in PostgreSQL will have the following structure:' },
@@ -325,7 +333,11 @@ app.post('/login', (req, res, next) => {
         content: [
             { type: 'title', text: 'Installation' },
             { type: 'paragraph', text: 'Install Firebase Admin SDK to enable BuildMyMeta support for Firestore and Realtime Database in Firebase.' },
-            { type: 'code', language: 'bash', code: 'npm install build-my-meta firebase-admin' },
+            {
+                type: 'code',
+                language: 'bash',
+                code: 'npm install build-my-meta firebase-admin\n# Or, using Yarn\nyarn add build-my-meta firebase-admin\n# Or, using pnpm\npnpm add build-my-meta firebase-admin'
+            },
 
             { type: 'title', text: 'Database Structure' },
             { type: 'paragraph', text: 'Metadata entries in Firebase (both Firestore and Realtime Database) will have the following structure:' },
@@ -529,7 +541,11 @@ app.post('/login', (req, res, next) => {
         content: [
             { type: 'title', text: 'Installation' },
             { type: 'paragraph', text: 'Install SQLite3 with Sequelize for SQLite database management.' },
-            { type: 'code', language: 'bash', code: 'npm install build-my-meta sequelize sqlite3' },
+            {
+                type: 'code',
+                language: 'bash',
+                code: 'npm install build-my-meta sequelize sqlite3\n# Or, using Yarn\nyarn add build-my-meta sequelize sqlite3\n# Or, using pnpm\npnpm add build-my-meta sequelize sqlite3'
+            },
 
             { type: 'title', text: 'Database Structure' },
             { type: 'paragraph', text: 'Metadata entries in SQLite will have the following structure:' },
@@ -688,7 +704,11 @@ app.post('/login', (req, res, next) => {
         content: [
             { type: 'title', text: 'Installation' },
             { type: 'paragraph', text: 'Install MySQL with Sequelize and BuildMyMeta for managing metadata logging in MySQL.' },
-            { type: 'code', language: 'bash', code: 'npm install build-my-meta sequelize mysql2' },
+            {
+                type: 'code',
+                language: 'bash',
+                code: 'npm install build-my-meta sequelize mysql2\n# Or, using Yarn\nyarn add build-my-meta sequelize mysql2\n# Or, using pnpm\npnpm add build-my-meta sequelize mysql2'
+            },
 
             { type: 'title', text: 'Database Structure' },
             { type: 'paragraph', text: 'Metadata entries in MySQL will have the following structure:' },
@@ -846,7 +866,11 @@ app.post('/login', (req, res, next) => {
         content: [
             { type: 'title', text: 'Installation' },
             { type: 'paragraph', text: 'Install the Cassandra driver and BuildMyMeta to use metadata logging with Cassandra.' },
-            { type: 'code', language: 'bash', code: 'npm install build-my-meta cassandra-driver' },
+            {
+                type: 'code',
+                language: 'bash',
+                code: 'npm install build-my-meta cassandra-driver\n# Or, using Yarn\nyarn add build-my-meta cassandra-driver\n# Or, using pnpm\npnpm add build-my-meta cassandra-driver'
+            },
 
             { type: 'title', text: 'Database Structure' },
             { type: 'paragraph', text: 'Metadata entries in Cassandra will have the following structure:' },
@@ -1012,7 +1036,11 @@ app.post('/login', (req, res, next) => {
         content: [
             { type: 'title', text: 'Installation' },
             { type: 'paragraph', text: 'Install the Neo4j driver along with BuildMyMeta to enable metadata logging in Neo4j.' },
-            { type: 'code', language: 'bash', code: 'npm install build-my-meta neo4j-driver' },
+            {
+                type: 'code',
+                language: 'bash',
+                code: 'npm install build-my-meta neo4j-driver\n# Or, using Yarn\nyarn add build-my-meta neo4j-driver\n# Or, using pnpm\npnpm add build-my-meta neo4j-driver'
+            },
 
             { type: 'title', text: 'Database Structure' },
             { type: 'paragraph', text: 'Metadata entries in Neo4j will have the following structure:' },
@@ -1176,7 +1204,11 @@ app.post('/login', (req, res, next) => {
         content: [
             { type: 'title', text: 'Installation' },
             { type: 'paragraph', text: 'Install the Sequelize ORM with MariaDB driver and BuildMyMeta for metadata logging.' },
-            { type: 'code', language: 'bash', code: 'npm install build-my-meta sequelize mariadb' },
+            {
+                type: 'code',
+                language: 'bash',
+                code: 'npm install build-my-meta sequelize mariadb\n# Or, using Yarn\nyarn add build-my-meta sequelize mariadb\n# Or, using pnpm\npnpm add build-my-meta sequelize mariadb'
+            },
 
             { type: 'title', text: 'Database Structure' },
             { type: 'paragraph', text: 'Metadata entries in MariaDB will have the following structure:' },
@@ -1334,7 +1366,11 @@ app.post('/login', (req, res, next) => {
         content: [
             { type: 'title', text: 'Installation' },
             { type: 'paragraph', text: 'Install Mongoose or other database packages based on your preference to enable metadata logging in Next.js.' },
-            { type: 'code', language: 'bash', code: 'npm install build-my-meta mongoose' },
+            {
+                type: 'code',
+                language: 'bash',
+                code: 'npm install build-my-meta mongoose\n# Or, using Yarn\nyarn add build-my-meta mongoose\n# Or, using pnpm\npnpm add build-my-meta mongoose'
+            },
 
             { type: 'title', text: 'Database Structure' },
             { type: 'paragraph', text: 'Metadata entries in MongoDB or your chosen database will have the following structure:' },
