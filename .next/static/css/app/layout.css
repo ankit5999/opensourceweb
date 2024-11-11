@@ -688,6 +688,12 @@ video {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.mb-16 {
+  margin-bottom: 4rem;
+}
+.mb-24 {
+  margin-bottom: 6rem;
+}
 .inline-block {
   display: inline-block;
 }
@@ -983,6 +989,10 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .pt-2 {
   padding-top: 0.5rem;
@@ -1396,7 +1406,6 @@ html {
   }
 }
 
-
 /*!*******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/scroll.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************/
@@ -1445,3 +1454,133 @@ Core : Scrollbar Design Configuration
     }
 
 }
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/animation.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+.catcontainer {
+    display: flex;
+}
+
+.face {
+    width: 90px;
+    /* Half of original width */
+    height: 200px;
+    /* Half of original height */
+    background: linear-gradient(to bottom,
+            rgb(89, 89, 89),
+            rgb(0, 0, 0),
+            rgb(0, 0, 0));
+    clip-path: polygon(25px 75px,
+            /* Adjusted for half-size */
+            55px 0,
+            80px 75px,
+            100px 75px,
+            100px 200px,
+            60px 185px,
+            25px 150px);
+    position: relative;
+    transition: all 200ms;
+    animation: ears 1.5s infinite ease-in-out;
+    animation-direction: alternate-reverse;
+}
+
+.eye {
+    position: absolute;
+    left: 35%;
+    top: 42%;
+    height: 50px;
+    /* Half of original height */
+    width: 50px;
+    /* Half of original width */
+    background: radial-gradient(rgb(255, 226, 60), rgb(128, 100, 0));
+    clip-path: polygon(0% 0%, 100% 60%, 80% 100%, 40% 90%);
+    animation: eyes 1.5s infinite cubic-bezier(1, 0.5, 0.8, 1);
+    animation-direction: alternate-reverse;
+}
+
+.face:nth-child(2) {
+    transform: rotateY(180deg);
+    transform-origin: center;
+}
+
+@keyframes ears {
+    to {
+        clip-path: polygon(25px 75px,
+                /* Adjusted for half-size */
+                30px 0,
+                80px 75px,
+                100px 75px,
+                100px 200px,
+                60px 185px,
+                25px 150px);
+    }
+}
+
+@keyframes eyes {
+    to {
+        clip-path: polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%);
+    }
+}
+
+
+
+
+/* .catcontainer {
+    display: flex;
+}
+
+.face {
+    width: 180px;
+    height: 400px;
+    background: linear-gradient(to bottom,
+            rgb(89, 89, 89),
+            rgb(0, 0, 0),
+            rgb(0, 0, 0));
+    clip-path: polygon(50px 150px,
+            110px 0,
+            160px 150px,
+            200px 150px,
+            200px 400px,
+            120px 370px,
+            50px 300px);
+    position: relative;
+    transition: all 200ms;
+    animation: ears 1.5s infinite ease-in-out;
+    animation-direction: alternate-reverse;
+}
+
+.eye {
+    position: absolute;
+    left: 35%;
+    top: 42%;
+    height: 100px;
+    width: 100px;
+    background: radial-gradient(rgb(255, 226, 60), rgb(128, 100, 0));
+    clip-path: polygon(0% 0%, 100% 60%, 80% 100%, 40% 90%);
+
+    animation: eyes 1.5s infinite cubic-bezier(1, 0.5, 0.8, 1);
+    animation-direction: alternate-reverse;
+}
+
+.face:nth-child(2) {
+    transform: rotateY(180deg);
+    transform-origin: center;
+}
+
+@keyframes ears {
+    to {
+        clip-path: polygon(50px 150px,
+                60px 0,
+                160px 150px,
+                200px 150px,
+                200px 400px,
+                120px 370px,
+                50px 300px);
+    }
+}
+
+@keyframes eyes {
+    to {
+        clip-path: polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%);
+    }
+} */

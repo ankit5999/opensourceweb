@@ -3,16 +3,17 @@ import { Inter } from 'next/font/google';
 import { ThemeProvider } from '../context/ThemeContext';
 import '../styles/globals.css';
 import '../styles/scroll.css';
+import '../styles/animation.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Workforwin Development Packages & Modules',
+  title: 'Open Source By Workforwin',
   description: 'Workforwin  provides open sourse development packages & modules to support faster development.',
   keywords: ['metadata', 'packages', 'modules', 'logging', 'API', 'database', 'MongoDB', 'PostgreSQL', 'MySQL', 'Firebase', 'SQLite', 'Cassandra', 'Neo4j', 'MariaDB', 'Redis', 'Oracle'],
   authors: [{ name: 'Workforwin' }],
   openGraph: {
-    title: 'Workforwin Development Packages & Modules',
+    title: 'Open Source By Workforwin',
     description: 'Flexible metadata logging for API calls across multiple databases.',
     url: 'https://opensource.workforwin.com',
     images: [
@@ -20,12 +21,12 @@ export const metadata: Metadata = {
         url: 'https://opensource.workforwin.com/assets/images/home/social_banner.svg',
         width: 1200,
         height: 630,
-        alt: 'Workforwin Development Packages & Modules',
+        alt: 'Open Source By Workforwin',
       },
     ],
   },
   twitter: {
-    title: 'Workforwin Development Packages & Modules',
+    title: 'Open Source By Workforwin',
     description: 'Flexible metadata logging for API calls across multiple databases.',
     site: '@workforwin',
     creator: '@workforwin',

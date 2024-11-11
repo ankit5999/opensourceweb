@@ -6,7 +6,7 @@ import { Terminal } from "lucide-react";
 
 export function CallToActionSection() {
     return (
-        <section className="py-16 px-4 bg-background text-primary">
+        <section className="py-10 mb-24 px-4 bg-background text-primary">
             <div className="container max-w-screen-xl mx-auto text-center">
                 <div className="flex flex-col items-center">
                     {/* Icon Animation */}

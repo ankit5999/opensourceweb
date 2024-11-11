@@ -19,7 +19,13 @@ const SideNav: FC<SideNavProps> = ({ databases, selectedDb, onSelect, isOpen, on
       <nav className="hidden md:flex w-72 h-screen fixed top-0 left-0 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 flex-col">
         <div className="sticky top-0 z-10 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 p-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-xl font-bold">BuildMyMeta</h1>
+            <a
+              href="/packages"
+              rel="noreferrer"
+            >
+              <h1 className="text-xl font-bold">BuildMyMeta</h1>
+            </a>
+            
             <ThemeToggle />
           </div>
         </div>
@@ -54,7 +60,12 @@ const SideNav: FC<SideNavProps> = ({ databases, selectedDb, onSelect, isOpen, on
           ></div>
           <nav className="fixed top-0 left-0 w-72 h-full bg-white dark:bg-gray-800 p-4 z-50">
             <div className="flex items-center justify-between mb-4">
-              <h1 className="text-xl font-bold">BuildMyMeta</h1>
+              <a
+                href="/packages"
+                rel="noreferrer"
+              >
+                <h1 className="text-xl font-bold">BuildMyMeta</h1>
+              </a>
               <button
                 onClick={onClose}
                 className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
@@ -88,4 +99,4 @@ const SideNav: FC<SideNavProps> = ({ databases, selectedDb, onSelect, isOpen, on
   );
 };
 
-export default SideNav;
+export default SideNav; 

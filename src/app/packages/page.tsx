@@ -9,11 +9,11 @@ import { Header } from '@/components/header';
 // Define a mock list of npm packages with documentation URLs
 const packages = [
   { name: 'BuildMyMeta', url: '/packages/build-my-meta' },
-  { name: 'next', url: '#' },
-  { name: 'typescript', url: '#' },
-  { name: 'framer-motion', url: '#' },
-  { name: 'axios', url: '#' },
-  { name: 'tailwindcss', url: '#' },
+  { name: 'next', url: '/coming-soon' },
+  { name: 'typescript', url: '/coming-soon' },
+  { name: 'framer-motion', url: '/coming-soon' },
+  { name: 'axios', url: '/coming-soon' },
+  { name: 'tailwindcss', url: '/coming-soon' },
 ];
 
 const PackagesPage = () => {

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { MailIcon, Terminal } from "lucide-react";
 import { Button } from "./ui/button";
 import { Header } from "./header";
+import CatAnimation from "./animations/CatAnimation";
 
 export function ComingSoonSection() {
     return (
@@ -30,7 +31,7 @@ export function ComingSoonSection() {
                         className="text-xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 px-4 leading-tight"
                         style={{ paddingBottom: "0.2em" }}  // Ensures 'g' descenders don't get clipped
                     >
-                        Contribution is Private
+                        Coming Soon...
                     </motion.h1>
 
                     {/* Subtitle */}
@@ -40,7 +41,7 @@ export function ComingSoonSection() {
                         transition={{ delay: 0.4, duration: 0.6 }}
                         className="max-w-lg text-lg text-muted-foreground font-mono"
                     >
-                        We’re building something amazing for developers! Stay tuned as we craft tools, resources, and content specifically for the developer community.
+                        Stay tuned! The feature you're looking for is coming soon to enhance your experience.
                     </motion.p>
 
                     {/* Notify Me Button */}
@@ -67,6 +68,14 @@ export function ComingSoonSection() {
                                 Contact Us
                             </Button>
                         </a>
+                    </motion.div>
+
+                    <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.8, duration: 0.6 }}
+                    >
+                        <CatAnimation />
                     </motion.div>
                 </div>
             </div>

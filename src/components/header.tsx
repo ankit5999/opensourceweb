@@ -24,7 +24,7 @@ export function Header() {
                     <nav className="hidden md:flex items-center gap-1">
                         {/* GitHub Button */}
                         <a
-                            href="#"
+                            href="/"
                             // target="_blank"
                             rel="noreferrer"
                         >

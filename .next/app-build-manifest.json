@@ -22,6 +22,17 @@
       "static/chunks/main-app.js",
       "static/chunks/app/packages/page.js"
     ],
+    "/packages/build-my-meta/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/packages/build-my-meta/layout.css",
+      "static/chunks/app/packages/build-my-meta/layout.js"
+    ],
+    "/packages/build-my-meta/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/packages/build-my-meta/page.js"
+    ],
     "/contribute/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -33,16 +44,27 @@
       "static/chunks/main-app.js",
       "static/chunks/app/contribute/page.js"
     ],
-    "/packages/build-my-meta/layout": [
+    "/contact/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/packages/build-my-meta/layout.css",
-      "static/chunks/app/packages/build-my-meta/layout.js"
+      "static/css/app/contact/layout.css",
+      "static/chunks/app/contact/layout.js"
     ],
-    "/packages/build-my-meta/page": [
+    "/contact/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/packages/build-my-meta/page.js"
+      "static/chunks/app/contact/page.js"
+    ],
+    "/coming-soon/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/coming-soon/layout.css",
+      "static/chunks/app/coming-soon/layout.js"
+    ],
+    "/coming-soon/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/coming-soon/page.js"
     ]
   }
 }
